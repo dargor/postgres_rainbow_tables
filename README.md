@@ -8,6 +8,7 @@ PoC of rainbow tables using PostgreSQL.
 
 ```
 cd sql/
+vim roles.sql # set a password, and add it to your ~/.pgpass file
 ./drop_db.sh # if you have a previous rainbows database
 ./create_db.sh
 cd ../
