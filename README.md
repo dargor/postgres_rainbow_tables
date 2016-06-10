@@ -8,7 +8,7 @@ PoC of rainbow tables using PostgreSQL.
 
 ```
 cd sql/
-vim roles.sql # set a password, and add it to your ~/.pgpass file
+vim roles.sql # create the user in psql, and add its password to your ~/.pgpass file
 ./drop_db.sh # if you have a previous rainbows database
 ./create_db.sh
 cd ../
@@ -30,6 +30,14 @@ echo -n 123123 | sha224sum -
 ```
 
 This should give you `123123` back.
+
+# Debug
+
+You might want to run this to get some useful (or not) messages :
+
+```
+export DEBUG=Y
+```
 
 # License
 
